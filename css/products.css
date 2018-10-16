@@ -1,0 +1,512 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    color: #666666;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+}
+
+/*#particles-js{*/
+/*height:320px;*/
+
+/*}*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+cite, em, i {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #666666;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*top*/
+.top {
+    height: 66px;
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    background: #ffffff;
+}
+
+.top.fixedOn {
+    position: fixed;
+    z-index: 100001;
+    top: 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.top .navBar {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /*right: 600px;*/
+    clear: both;
+    height: 66px;
+}
+
+.top .navBar .logo {
+    width: 168px;
+    /*margin-left: 10%;*/
+    float: left;
+    height: 60px;
+    background: url('../images/logo-new.png') no-repeat left;
+    margin-top: 3px;
++
+}
+
+@media screen and (max-width: 1200px) {
+    /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .top .navBar .logo {
+        margin-left: 5%;
+    }
+}
+
+.navList {
+    /*margin-left: 5%;*/
+    float: right;
+    /*margin-left: 520px;*/
+    display: inline-block;
+}
+
+.navList > li {
+    /*padding: 0 30px 0 0;*/
+    margin-left: 50px;
+    float: left;
+    text-align: center;
+    line-height: 66px;
+    height: 66px;
+    position: relative;
+    /*background: url(../images/down.png) no-repeat right;*/
+}
+
+.navList > li:first-child {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navList > li > a {
+    font-size: 16px;
+    color: #666666;
+    display: block;
+    width: 100%;
+}
+
+.navList > li.on > a, .navList > li:hover > a {
+    color: #2BB1F1;
+}
+
+.navList > li > ul {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.navList > li > ul > li {
+    background: #fff;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #e3e5e5;
+}
+
+.navList > li > ul > li:hover {
+    background: #ebebeb;
+}
+
+.navList > li > ul > li:last-child {
+    border: none;
+}
+
+.navList > li > ul > li a {
+    font-size: 14px;
+    color: #333333;
+}
+
+.navList > li:hover > ul {
+    display: block;
+}
+.all-images{
+    text-align: center;
+    height: 550px;
+    background: url(../images/banner-1.jpg) no-repeat 50% 50%;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 400px;
+    overflow: hidden;
+}
+.banner {
+
+
+    width: 100%;
+    /*height: 538px;*/
+    overflow: hidden;
+
+}
+
+.banner img {
+    position: relative;
+    height: 100%;
+}
+.computer-all{
+    /*text-align: center;*/
+    width: 100%;
+    min-width: 1200px;
+}
+.computer {
+    width: 100%;
+    /*min-width: 1200px;*/
+    min-height: 300px;
+    /*width:800px;*/
+    height: 570px;
+    overflow: hidden;
+    /*margin-left: 900px;*/
+    position:relative;
+    margin-top: -200px;
+    margin-bottom: 180px;
+
+}
+.computer img {
+    z-index: 10;
+    height: 440px;
+    margin-left:50%;
+}
+/*@media screen and (max-width:1200px) {*/
+    /*!*当屏幕尺寸小于600px时，应用下面的CSS样式*!*/
+    /*.computer {*/
+        /*display: block;*/
+        /*width:800px;*/
+        /*height: 570px;*/
+        /*overflow: hidden;*/
+        /*margin-left:400px;*/
+        /*position:relative;*/
+        /*margin-top: -200px;*/
+        /*margin-bottom: 180px;*/
+
+    /*}*/
+/*}*/
+
+.introduce-all{
+     /*text-align: left;*/
+    min-width: 1200px;
+     width: 100%;
+     /*min-width: 1200px;*/
+     /*min-height: 400px;*/
+     /*overflow: hidden;*/
+
+ }
+.introduce {
+    /*margin-left: -280px;*/
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    left: 7%;
+    top: -350px;
+}
+@media screen and (max-width:1300px) {
+    /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .introduce {
+        text-align: left;
+        margin: 0 auto;
+        width: 80%;
+        /*float: left;*/
+        position: relative;
+        left: -5%;
+        top: -300px;
+    }
+}
+.introduce .title {
+    display: inline-block;
+    padding-bottom: 25px;
+    font-family: 苹方 light;
+    font-size: 32px;
+    color: #76B9FB;
+    font-style: normal;
+}
+
+.introduce .text1 {
+    font-family: "微软雅黑 Light";
+    font-size: 20px;
+}
+
+.core {
+    margin-top: -200px;
+
+    height: 600px;
+    background: url("../images/banner-2.jpg") no-repeat 50% 50%;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#core-text-title {
+    text-align: center;
+    padding-top: 90px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    font-size: 32px;
+}
+
+.core .text .fons-all {
+    padding-top: 40px;
+}
+
+.core .text .fons-all .fonts {
+    text-align: center;
+    font-family: "微软雅黑 Light";
+    color: white;
+    line-height: 26px;
+    font-size: 20px;
+}
+.core-img{
+    margin: 0 auto;
+    width: 60%;
+    /*padding-left:18%;*/
+    min-width: 1200px;
+    min-height: 500px;
+    overflow: hidden;
+    /*display: flex;*/
+}
+.core-img ul{
+    font-size: 18px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    margin-top:100px;
+    text-align: center;
+    display: flex;
+}
+.core-img ul li{
+    width: 100%;
+    /*padding: 10px;*/
+}
+.core-img ul li img{
+    width: 140px;
+}
+.core-img ul li span{
+    display: inline-block;
+    margin-top: 30px;
+}
+.crm{
+    margin:  100px auto;
+    width: 1200px;
+    min-width: 1200px;
+}
+.crm dl{
+    display: flex;
+    width: 100%;
+}
+.crm dl dt{
+    width: 50%;
+    height: 250px;
+}
+.crm dl dt img{
+    height: 100%;
+    padding-left: 20px;
+}
+.crm dl dd{
+    padding-right: 20px;
+    width: 50%;
+    text-align: right;
+}
+.crm dl dd .title{
+    display: inline-block;
+    padding-bottom: 25px;
+    font-family: 苹方 light;
+    font-size: 32px;
+    color: #76B9FB;
+    font-style: normal;
+}
+.crm dl dd .texts{
+    padding-top: 20px;
+}
+.crm dl dd .texts p{
+    font-family: "微软雅黑 Light";
+    font-size: 20px;
+    line-height:30px;
+}
+.customer-service{
+    text-align: center;
+    height:400px;
+    background: url("../images/banner-3.jpg") no-repeat 50% 50%;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 400px;
+    overflow: hidden;
+}
+.customer-service .title{
+    text-align: center;
+    padding-top: 90px;
+    font-family: "微软雅黑 Light";
+    color: white;
+    font-size: 32px;
+}
+.customer-service .texts{
+    margin-top: 50px;
+}
+.customer-service .texts p{
+
+    text-align: center;
+    font-family: "微软雅黑 Light";
+    color: white;
+    line-height: 46px;
+    font-size: 20px;
+}
+.crm1{
+    margin:  100px auto;
+    width: 1200px;
+    min-width: 1200px;
+}
+/*.crm1 dl dt{*/
+/*float: ;*/
+/*}*/
+.crm1 dl{
+    display: flex;
+    width: 100%;
+}
+.crm1 dl dd{
+    width: 50%;
+    height: 250px;
+}
+.crm1 dl dd img{
+    padding-right: 20px;
+    float: right;
+    height: 100%;
+}
+.crm1 dl dt{
+    height: 250px;
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+.crm1 dl dt .title{
+    display: inline-block;
+    padding-bottom: 25px;
+    font-family: 苹方 light;
+    font-size: 32px;
+    color: #76B9FB;
+    font-style: normal;
+}
+.crm1 dl dt .texts{
+    padding-top: 20px;
+}
+.crm1 dl dt .texts p{
+    font-family: "微软雅黑 Light";
+    font-size: 20px;
+    line-height:30px;
+}
+
+/*footer*/
+.tit {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+.footer {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    background: #3A3A3A;
+    color: #ffffff;
+    padding-top: 50px;
+    min-height: 150px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+#footer-number{
+    position: relative;
+    left: -540px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    font-family: 宋体;
+}
+.footer .titBar {
+    color: #ffffff;
+}
+.footer dl {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    /*padding-top:-10px;*/
+    font-size: 16px;
+}
+
+.footer dl dt, .footer dl dd {
+    float: left;
+    display: inline-block;
+    width: 435px;
+    padding-left: 40px;
+}
+
+.footer dl dd {
+    margin-left: 130px;
+}
+
+.footer dl dt ul {
+}
+
+.footer dl dt ul li {
+    width: 120%;
+    padding-top: 10px;
+    margin-left: -40px;
+    padding-bottom: 10px;
+}
+
+/*.footer dl dd ul li{*/
+/*line-height: 30px;*/
+/*}*/
+/*.ddTwo{*/
+/*margin-top: 18px;*/
+/*}*/
+.small-font{
+    font-size: 12px;
+}
+.footer dl dd img {
+    display: block;
+    margin-top: -10px;
+    margin-left: 340px;
+}
+@media screen and (max-width: 1200px) {
+    #footer-number{
+        position: relative;
+        /*top: 105px;*/
+        left: -40%;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        font-style: normal;
+        font-family: 宋体;
+    }
+    .footer dl dt ul li {
+        padding-top: 10px;
+        margin-left: 3.5%;
+        padding-bottom: 10px;
+    }
+}
